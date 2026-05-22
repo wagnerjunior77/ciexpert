@@ -1,0 +1,3 @@
+rtl/regs.sv
+rtl/ufe8_pkg.sv
+tb/tb_regs.sv

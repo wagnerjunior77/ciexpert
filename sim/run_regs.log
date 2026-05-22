@@ -1,0 +1,17 @@
+Command: /opt/synopsys/projects/ufe8/./sim/simv_regs -l sim/run_regs.log
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  May 22 09:46 2026
+*Verdi* Loading libsscore_vcs202506.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06-SP2, Linux x86_64/64bit, 11/27/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'sim/tb_regs.fsdb'
+*Verdi* : Begin traversing the scope (tb_regs), layer (0).
+*Verdi* : End of traversing.
+tb_regs finalizado
+$finish called from file "tb/tb_regs.sv", line 101.
+$finish at simulation time                67000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 67000 ps
+CPU Time:      0.180 seconds;       Data structure size:   0.0Mb
+Fri May 22 09:46:11 2026
