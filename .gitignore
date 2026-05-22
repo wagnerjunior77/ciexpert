@@ -1,0 +1,29 @@
+# Synopsys/VCS simulation outputs
+simv
+simv.daidir/
+csrc/
+ucli.key
+*.log
+*.vpd
+*.vcd
+*.fsdb
+*.fsdb.*
+*.kdb
+verdiLog/
+novas.*
+ novas.*
+DVEfiles/
+.vcs/
+
+# Build/sim folders
+sim/*.log
+sim/*.fsdb
+sim/*.vpd
+sim/simv
+sim/csrc/
+sim/simv.daidir/
+
+# Editor/OS
+.vscode/
+.DS_Store
+*~
