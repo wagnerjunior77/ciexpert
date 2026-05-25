@@ -2970,16 +2970,16 @@ static inline U asm_bsf (U in)
 }
 
 
-void  rmaPropagate0_p_simv_regs_daidir (UB  * pcode, scalar  val);
-void  rmaPropagate0_simv_regs_daidir (UB  * pcode, scalar  val);
-void  rmaPropagate0_f_simv_regs_daidir (UB  * pcode, scalar  val, U  I614, scalar  * I1512, U  did);
-void  rmaPropagate0_r_simv_regs_daidir (UB  * pcode);
-void  rmaPropagate0_wn_simv_regs_daidir (UB  * pcode, scalar  val);
-void  rmaPropagate1_p_simv_regs_daidir (UB  * pcode, scalar  val);
-void  rmaPropagate1_simv_regs_daidir (UB  * pcode, scalar  val);
-void  rmaPropagate1_f_simv_regs_daidir (UB  * pcode, scalar  val, U  I614, scalar  * I1512, U  did);
-void  rmaPropagate1_r_simv_regs_daidir (UB  * pcode);
-void  rmaPropagate1_wn_simv_regs_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate0_p_simv_controller_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate0_simv_controller_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate0_f_simv_controller_daidir (UB  * pcode, scalar  val, U  I614, scalar  * I1512, U  did);
+void  rmaPropagate0_r_simv_controller_daidir (UB  * pcode);
+void  rmaPropagate0_wn_simv_controller_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate1_p_simv_controller_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate1_simv_controller_daidir (UB  * pcode, scalar  val);
+void  rmaPropagate1_f_simv_controller_daidir (UB  * pcode, scalar  val, U  I614, scalar  * I1512, U  did);
+void  rmaPropagate1_r_simv_controller_daidir (UB  * pcode);
+void  rmaPropagate1_wn_simv_controller_daidir (UB  * pcode, scalar  val);
 void  schedNewEvent (struct dummyq_struct * I1489, EBLK  * I1193, U  I621);
 
 #ifdef __cplusplus

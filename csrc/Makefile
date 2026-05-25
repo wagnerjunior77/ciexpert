@@ -8,7 +8,7 @@ VSRC=..
 TARGET_ARCH=
 
 # Choose name of executable 
-PRODUCTBASE=$(VSRC)/sim/simv_regs
+PRODUCTBASE=$(VSRC)/sim/simv_controller
 
 PRODUCT=$(PRODUCTBASE)
 
@@ -39,7 +39,7 @@ STDLIB =
 STRIPFLAGS= 
 
 PRE_LDFLAGS= # Loader Flags
-LDFLAGS= -rdynamic  -Wl,-rpath='$$ORIGIN'/simv_regs.daidir -Wl,-rpath=./simv_regs.daidir -Wl,-rpath=/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib -L/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib 
+LDFLAGS= -rdynamic  -Wl,-rpath='$$ORIGIN'/simv_controller.daidir -Wl,-rpath=./simv_controller.daidir -Wl,-rpath=/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib -L/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib 
 # Picarchive Flags
 PICLDFLAGS= -Wl,-rpath-link=./ 
 PIC_LD=ld

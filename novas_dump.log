@@ -2,94 +2,94 @@
 # log primitive debug message of FSDB dumping                                         #
 # This is for R&D to analyze when there are issues happening when FSDB dump           #
 #######################################################################################
-ANF: vcsd_get_serial_mode_status('./sim/simv_regs: undefined symbol: vcsd_get_serial_mode_status')
-ANF: vcsd_enable_sva_success_callback('./sim/simv_regs: undefined symbol: vcsd_enable_sva_success_callback')
-ANF: vcsd_disable_sva_success_callback('./sim/simv_regs: undefined symbol: vcsd_disable_sva_success_callback')
-ANF: vcsd_get_power_scope_name('./sim/simv_regs: undefined symbol: vcsd_get_power_scope_name')
-ANF: vcsd_dump_var_vpdg('./sim/simv_regs: undefined symbol: vcsd_dump_var_vpdg')
-ANF: vcsd_begin_no_value_var_info('./sim/simv_regs: undefined symbol: vcsd_begin_no_value_var_info')
-ANF: vcsd_end_no_value_var_info('./sim/simv_regs: undefined symbol: vcsd_end_no_value_var_info')
-ANF: vcsd_remove_xprop_merge_mode_callback('./sim/simv_regs: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
-ANF: vhpi_get_cb_info('./sim/simv_regs: undefined symbol: vhpi_get_cb_info')
-ANF: vhpi_free_handle('./sim/simv_regs: undefined symbol: vhpi_free_handle')
-ANF: vhpi_fetch_vcsd_handle('./sim/simv_regs: undefined symbol: vhpi_fetch_vcsd_handle')
-ANF: vhpi_fetch_vpi_handle('./sim/simv_regs: undefined symbol: vhpi_fetch_vpi_handle')
-ANF: vhpi_has_verilog_parent('./sim/simv_regs: undefined symbol: vhpi_has_verilog_parent')
-ANF: vhpi_is_verilog_scope('./sim/simv_regs: undefined symbol: vhpi_is_verilog_scope')
-ANF: scsd_xprop_is_enabled('./sim/simv_regs: undefined symbol: scsd_xprop_is_enabled')
-ANF: scsd_xprop_sig_is_promoted('./sim/simv_regs: undefined symbol: scsd_xprop_sig_is_promoted')
-ANF: scsd_xprop_int_xvalue('./sim/simv_regs: undefined symbol: scsd_xprop_int_xvalue')
-ANF: scsd_xprop_bool_xvalue('./sim/simv_regs: undefined symbol: scsd_xprop_bool_xvalue')
-ANF: scsd_xprop_enum_xvalue('./sim/simv_regs: undefined symbol: scsd_xprop_enum_xvalue')
-ANF: scsd_xprop_register_merge_mode_cb('./sim/simv_regs: undefined symbol: scsd_xprop_register_merge_mode_cb')
-ANF: scsd_xprop_delete_merge_mode_cb('./sim/simv_regs: undefined symbol: scsd_xprop_delete_merge_mode_cb')
-ANF: scsd_xprop_get_merge_mode('./sim/simv_regs: undefined symbol: scsd_xprop_get_merge_mode')
-ANF: scsd_thread_get_info('./sim/simv_regs: undefined symbol: scsd_thread_get_info')
-ANF: scsd_thread_vc_init('./sim/simv_regs: undefined symbol: scsd_thread_vc_init')
-ANF: scsd_master_set_delta_sync_cbk('./sim/simv_regs: undefined symbol: scsd_master_set_delta_sync_cbk')
-ANF: scsd_fgp_get_fsdb_cores('./sim/simv_regs: undefined symbol: scsd_fgp_get_fsdb_cores')
-ANF: scsd_fgp_get_is_cpu_affinity_disabled('./sim/simv_regs: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
-ANF: vdi_dbg_set_client_control('./sim/simv_regs: undefined symbol: vdi_dbg_set_client_control')
-ANF: vhdi_dt_get_type('./sim/simv_regs: undefined symbol: vhdi_dt_get_type')
-ANF: vhdi_dt_get_key('./sim/simv_regs: undefined symbol: vhdi_dt_get_key')
-ANF: vhdi_dt_get_vhdl_enum_info('./sim/simv_regs: undefined symbol: vhdi_dt_get_vhdl_enum_info')
-ANF: vhdi_dt_get_vhdl_physical_info('./sim/simv_regs: undefined symbol: vhdi_dt_get_vhdl_physical_info')
-ANF: vhdi_dt_get_vhdl_array_info('./sim/simv_regs: undefined symbol: vhdi_dt_get_vhdl_array_info')
-ANF: vhdi_dt_get_vhdl_record_info('./sim/simv_regs: undefined symbol: vhdi_dt_get_vhdl_record_info')
-ANF: vhdi_dt_get_vhdl_integer_range_info('./sim/simv_regs: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
-ANF: vhdi_def_traverse_module('./sim/simv_regs: undefined symbol: vhdi_def_traverse_module')
-ANF: vhdi_def_traverse_scope('./sim/simv_regs: undefined symbol: vhdi_def_traverse_scope')
-ANF: vhdi_def_traverse_variable('./sim/simv_regs: undefined symbol: vhdi_def_traverse_variable')
-ANF: vhdi_def_get_module_id_by_vhpi('./sim/simv_regs: undefined symbol: vhdi_def_get_module_id_by_vhpi')
-ANF: vhdi_def_get_handle_by_module_id('./sim/simv_regs: undefined symbol: vhdi_def_get_handle_by_module_id')
-ANF: vhdi_def_get_variable_info_by_vhpi('./sim/simv_regs: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
-ANF: vhdi_def_free('./sim/simv_regs: undefined symbol: vhdi_def_free')
-ANF: vhdi_ist_traverse_scope('./sim/simv_regs: undefined symbol: vhdi_ist_traverse_scope')
-ANF: vhdi_ist_traverse_variable('./sim/simv_regs: undefined symbol: vhdi_ist_traverse_variable')
-ANF: vhdi_ist_convert_by_vhpi('./sim/simv_regs: undefined symbol: vhdi_ist_convert_by_vhpi')
-ANF: vhdi_ist_clone('./sim/simv_regs: undefined symbol: vhdi_ist_clone')
-ANF: vhdi_ist_free('./sim/simv_regs: undefined symbol: vhdi_ist_free')
-ANF: vhdi_ist_hash_key('./sim/simv_regs: undefined symbol: vhdi_ist_hash_key')
-ANF: vhdi_ist_compare('./sim/simv_regs: undefined symbol: vhdi_ist_compare')
-ANF: vhdi_ist_get_value_addr('./sim/simv_regs: undefined symbol: vhdi_ist_get_value_addr')
-ANF: vhdi_set_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_set_scsd_callback')
-ANF: vhdi_cbk_set_force_callback('./sim/simv_regs: undefined symbol: vhdi_cbk_set_force_callback')
-ANF: vhdi_trigger_init_force('./sim/simv_regs: undefined symbol: vhdi_trigger_init_force')
-ANF: vhdi_ist_check_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_ist_check_scsd_callback')
-ANF: vhdi_ist_add_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_ist_add_scsd_callback')
-ANF: vhdi_ist_remove_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_ist_remove_scsd_callback')
-ANF: vhdi_ist_get_scsd_user_data('./sim/simv_regs: undefined symbol: vhdi_ist_get_scsd_user_data')
-ANF: vhdi_add_time_change_callback('./sim/simv_regs: undefined symbol: vhdi_add_time_change_callback')
-ANF: vhdi_get_real_value_by_value_addr('./sim/simv_regs: undefined symbol: vhdi_get_real_value_by_value_addr')
-ANF: vhdi_get_64_value_by_value_addr('./sim/simv_regs: undefined symbol: vhdi_get_64_value_by_value_addr')
-ANF: vhdi_xprop_inst_is_promoted('./sim/simv_regs: undefined symbol: vhdi_xprop_inst_is_promoted')
-ANF: vdi_ist_convert_by_vhdi('./sim/simv_regs: undefined symbol: vdi_ist_convert_by_vhdi')
-ANF: vhdi_ist_get_module_id('./sim/simv_regs: undefined symbol: vhdi_ist_get_module_id')
-ANF: vhdi_refine_foreign_scope_type('./sim/simv_regs: undefined symbol: vhdi_refine_foreign_scope_type')
-ANF: vhdi_flush_callback('./sim/simv_regs: undefined symbol: vhdi_flush_callback')
-ANF: vhdi_set_orig_name('./sim/simv_regs: undefined symbol: vhdi_set_orig_name')
-ANF: vhdi_set_dump_pt('./sim/simv_regs: undefined symbol: vhdi_set_dump_pt')
-ANF: vhdi_set_int_subtype('./sim/simv_regs: undefined symbol: vhdi_set_int_subtype')
-ANF: vhdi_set_fixed_point('./sim/simv_regs: undefined symbol: vhdi_set_fixed_point')
-ANF: vhdi_get_fsdb_option('./sim/simv_regs: undefined symbol: vhdi_get_fsdb_option')
-ANF: vhdi_fgp_get_mode('./sim/simv_regs: undefined symbol: vhdi_fgp_get_mode')
-ANF: vhdi_node_register_composite_var('./sim/simv_regs: undefined symbol: vhdi_node_register_composite_var')
-ANF: vhdi_node_analysis('./sim/simv_regs: undefined symbol: vhdi_node_analysis')
-ANF: vhdi_node_id('./sim/simv_regs: undefined symbol: vhdi_node_id')
-ANF: vhdi_node_ist_check_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_node_ist_check_scsd_callback')
-ANF: vhdi_node_ist_add_scsd_callback('./sim/simv_regs: undefined symbol: vhdi_node_ist_add_scsd_callback')
-ANF: vhdi_node_ist_get_value_addr('./sim/simv_regs: undefined symbol: vhdi_node_ist_get_value_addr')
-ANF: vhdi_enc_def_traverse_module('./sim/simv_regs: undefined symbol: vhdi_enc_def_traverse_module')
-ANF: vhdi_enc_def_traverse_scope('./sim/simv_regs: undefined symbol: vhdi_enc_def_traverse_scope')
-ANF: vhdi_enc_def_traverse_variable('./sim/simv_regs: undefined symbol: vhdi_enc_def_traverse_variable')
-ANF: vhdi_enc_ist_traverse_scope('./sim/simv_regs: undefined symbol: vhdi_enc_ist_traverse_scope')
-ANF: vhdi_enc_ist_traverse_variable('./sim/simv_regs: undefined symbol: vhdi_enc_ist_traverse_variable')
-ANF: vhdi_enc_ist_get_module_id('./sim/simv_regs: undefined symbol: vhdi_enc_ist_get_module_id')
-ANF: vhdi_enc_def_get_handle_by_module_id('./sim/simv_regs: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+ANF: vcsd_get_serial_mode_status('./sim/simv_controller: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('./sim/simv_controller: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('./sim/simv_controller: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('./sim/simv_controller: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_dump_var_vpdg('./sim/simv_controller: undefined symbol: vcsd_dump_var_vpdg')
+ANF: vcsd_begin_no_value_var_info('./sim/simv_controller: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('./sim/simv_controller: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('./sim/simv_controller: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('./sim/simv_controller: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('./sim/simv_controller: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('./sim/simv_controller: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('./sim/simv_controller: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('./sim/simv_controller: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('./sim/simv_controller: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('./sim/simv_controller: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('./sim/simv_controller: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('./sim/simv_controller: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('./sim/simv_controller: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('./sim/simv_controller: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('./sim/simv_controller: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('./sim/simv_controller: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('./sim/simv_controller: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('./sim/simv_controller: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('./sim/simv_controller: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('./sim/simv_controller: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('./sim/simv_controller: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('./sim/simv_controller: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vdi_dbg_set_client_control('./sim/simv_controller: undefined symbol: vdi_dbg_set_client_control')
+ANF: vhdi_dt_get_type('./sim/simv_controller: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('./sim/simv_controller: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('./sim/simv_controller: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('./sim/simv_controller: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('./sim/simv_controller: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('./sim/simv_controller: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_dt_get_vhdl_integer_range_info('./sim/simv_controller: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
+ANF: vhdi_def_traverse_module('./sim/simv_controller: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('./sim/simv_controller: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('./sim/simv_controller: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('./sim/simv_controller: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('./sim/simv_controller: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('./sim/simv_controller: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('./sim/simv_controller: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('./sim/simv_controller: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('./sim/simv_controller: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('./sim/simv_controller: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('./sim/simv_controller: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('./sim/simv_controller: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('./sim/simv_controller: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('./sim/simv_controller: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('./sim/simv_controller: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('./sim/simv_controller: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('./sim/simv_controller: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('./sim/simv_controller: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('./sim/simv_controller: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('./sim/simv_controller: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('./sim/simv_controller: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('./sim/simv_controller: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('./sim/simv_controller: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('./sim/simv_controller: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('./sim/simv_controller: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('./sim/simv_controller: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('./sim/simv_controller: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('./sim/simv_controller: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_set_int_subtype('./sim/simv_controller: undefined symbol: vhdi_set_int_subtype')
+ANF: vhdi_set_fixed_point('./sim/simv_controller: undefined symbol: vhdi_set_fixed_point')
+ANF: vhdi_get_fsdb_option('./sim/simv_controller: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('./sim/simv_controller: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('./sim/simv_controller: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('./sim/simv_controller: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('./sim/simv_controller: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('./sim/simv_controller: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('./sim/simv_controller: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('./sim/simv_controller: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('./sim/simv_controller: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('./sim/simv_controller: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('./sim/simv_controller: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('./sim/simv_controller: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('./sim/simv_controller: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('./sim/simv_controller: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
 VCS compile option:
- option[0]: ./sim/simv_regs
+ option[0]: ./sim/simv_controller
  option[1]: -l
- option[2]: sim/run_regs.log
+ option[2]: sim/run_controller.log
  option[3]: /opt/synopsys/vcs/X-2025.06-SP2/linux64/bin/vcs1fe
  option[4]: -Mcc=gcc
  option[5]: -Mcplusplus=g++
@@ -98,7 +98,7 @@ VCS compile option:
  option[8]: -Mxllcflags=
  option[9]: -Mxcflags= -pipe -fPIC -I/opt/synopsys/vcs/X-2025.06-SP2/include
  option[10]: -Mldflags= -rdynamic 
- option[11]: -Mout=sim/simv_regs
+ option[11]: -Mout=sim/simv_controller
  option[12]: -Mamsrun=
  option[13]: -Mvcsaceobjs=
  option[14]: -Mobjects= /opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvirsim.so /opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so /opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so /opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so 
@@ -109,7 +109,7 @@ VCS compile option:
  option[19]: -Mcsrc=
  option[20]: -Msyslibs=/opt/synopsys/verdi/X-2025.06-SP2/share/PLI/VCS/LINUX64/pli.a -ldl 
  option[21]: -l
- option[22]: sim/compile_regs.log
+ option[22]: sim/compile_controller.log
  option[23]: -full64
  option[24]: -debug_access+all
  option[25]: +vpi
@@ -118,7 +118,7 @@ VCS compile option:
  option[28]: -kdb
  option[29]: -Xufe=2steps
  option[30]: -o
- option[31]: sim/simv_regs
+ option[31]: sim/simv_controller
  option[32]: -Xhdlxmropt
  option[33]: -picarchive
  option[34]: -P
@@ -165,7 +165,7 @@ COLORTERM=
 USERNAME=ciexpert
 CHROME_DESKTOP=code.desktop
 XDG_VTNR=2
-GIO_LAUNCHED_DESKTOP_FILE_PID=3996
+GIO_LAUNCHED_DESKTOP_FILE_PID=4022
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 which_declare=declare -f
 VSCODE_CODE_CACHE_PATH=/home/ciexpert/.config/Code/CachedData/0958016b2af9f09bb4257e0df4a95e2f90590f9f
@@ -190,7 +190,7 @@ GJS_DEBUG_OUTPUT=stderr
 VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
 NOVAS_HOME=/opt/synopsys/verdi/X-2025.06-SP2
 MAIL=/var/spool/mail/ciexpert
-VSCODE_PID=3996
+VSCODE_PID=4022
 SHELL=/bin/bash
 TERM=dumb
 QT_IM_MODULE=ibus
@@ -210,20 +210,20 @@ GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 LOGNAME=ciexpert
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 XDG_RUNTIME_DIR=/run/user/1000
-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.P305P3
-PATH=/home/ciexpert/.codex/tmp/arg0/codex-arg09mMx8y:/opt/synopsys/verdi/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/home/ciexpert/.local/bin:/home/ciexpert/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/home/ciexpert/.vscode/extensions/openai.chatgpt-26.513.21555-linux-x64/bin/linux-x86_64:/opt/synopsys/vcs/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.FH3BQ3
+PATH=/home/ciexpert/.codex/tmp/arg0/codex-arg0A4s450:/opt/synopsys/verdi/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/home/ciexpert/.local/bin:/home/ciexpert/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin:/home/ciexpert/.vscode/extensions/openai.chatgpt-26.519.32039-linux-x64/bin/linux-x86_64:/opt/synopsys/vcs/X-2025.06-SP2/bin:/opt/synopsys/vcs/X-2025.06-SP2/bin
 VCS_HOME=/opt/synopsys/vcs/X-2025.06-SP2
 DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
 VSCODE_IPC_HOOK=/run/user/1000/vscode-88a87952-1.12-main.sock
 HISTSIZE=1000
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2578,unix/unix:/tmp/.ICE-unix/2578
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2592,unix/unix:/tmp/.ICE-unix/2592
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 GIT_PAGER=cat
 BASH_FUNC_which%%=() {  ( alias;
  eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
 }
-_=./sim/simv_regs
+_=./sim/simv_controller
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_STACK_EXEC=true
 VCS_EXEC_DONE=1
@@ -232,13 +232,13 @@ DVE=/opt/synopsys/vcs/X-2025.06-SP2/gui/dve
 SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/home/ciexpert/.localhost.localdomain-borrow.txt
 Runtime command line arguments:
-argv[0]=./sim/simv_regs
+argv[0]=./sim/simv_controller
 argv[1]=-l
-argv[2]=sim/run_regs.log
+argv[2]=sim/run_controller.log
 **********Message Rewind**************
 235 profile - 100
-          CPU/Mem usage: 0.060 sys,  0.110 user,  548.21M mem
-236 Elapsed time:    0:00:05    Fri May 22 09:46:10 2026
+          CPU/Mem usage: 0.070 sys,  0.100 user,  548.23M mem
+236 Elapsed time:    0:00:06    Sun May 24 23:17:33 2026
 237 User CPU time used: 0 seconds
 238 System CPU time used: 0 seconds
 239 pliAppInit
@@ -257,73 +257,73 @@ argv[2]=sim/run_regs.log
 252 LIBSSCORE=found /opt/synopsys/verdi/X-2025.06-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202506.so through $NOVAS_HOME setting.
 253 FSDB Dumper for VCS, Release Verdi_X-2025.06-SP2, Linux x86_64/64bit, 11/27/2025
 254 (C) 1996 - 2025 by Synopsys, Inc.
-255 sps_call_fsdbDumpfile_main at 0 : tb/tb_regs.sv(62)
-256 argv[0]: (sim/tb_regs.fsdb)
-257 *Verdi* : Create FSDB file 'sim/tb_regs.fsdb'
+255 sps_call_fsdbDumpfile_main at 0 : tb/tb_controller.sv(171)
+256 argv[0]: (sim/tb_controller.fsdb)
+257 *Verdi* : Create FSDB file 'sim/tb_controller.fsdb'
 258 [spi_vcs_vd_ppi_create_root]: no upf option
 259 DUMPER_MEMORY_REDUCTION is enabled.
-260 compile option from '/opt/synopsys/projects/ufe8/sim/simv_regs.daidir/vcs_rebuild'.
-261   "vcs '-full64' '-sverilog' '-debug_access+all' '-kdb' 'rtl/ufe8_pkg.sv' 'rtl/regs.sv' 'tb/tb_regs.sv' '-o' 'sim/simv_regs' '-l' 'sim/compile_regs.log' 2>&1"
+260 compile option from '/opt/synopsys/projects/ufe8/sim/simv_controller.daidir/vcs_rebuild'.
+261   "vcs '-full64' '-sverilog' '-debug_access+all' '-kdb' 'rtl/ufe8_pkg.sv' 'rtl/controller.sv' 'tb/tb_controller.sv' '-o' 'sim/simv_controller' '-l' 'sim/compile_controller.log' 2>&1"
 262 DVDI_is_vir_unload_enabled is enable
 263 FSDB_VCS_ENABLE_NATIVE_VC is enable
 264 FSDB_VCS_ENABLE_MEMORY_NATIVE_VC is enabled
-265 sps_call_fsdbDumpvars_vd_main at 0 : tb/tb_regs.sv(63)
+265 sps_call_fsdbDumpvars_vd_main at 0 : tb/tb_controller.sv(172)
 266 argv[0]: (0)
-267 argv[1]: (handle) tb_regs
-268 *Verdi* : Begin traversing the scope (tb_regs), layer (0).
+267 argv[1]: (handle) tb_controller
+268 *Verdi* : Begin traversing the scope (tb_controller), layer (0).
 269 *Verdi* : End of traversing.
 270 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  650.11M mem
-                   incr: 0.000 sys,  0.000 user,  11.44M mem
-                   accu: 0.000 sys,  0.000 user,  11.44M mem
-              accu incr: 0.000 sys,  0.000 user,  11.44M mem
+          CPU/Mem usage: 0.080 sys,  0.100 user,  650.12M mem
+                   incr: 0.000 sys,  0.000 user,  11.42M mem
+                   accu: 0.000 sys,  0.000 user,  11.42M mem
+              accu incr: 0.000 sys,  0.000 user,  11.42M mem
 
-          Count usage: 18 var,  18 idcode,  9 callback
-                 incr: 18 var,  18 idcode,  9 callback
-                 accu: 18 var,  18 idcode,  9 callback
-            accu incr: 18 var,  18 idcode,  9 callback
+          Count usage: 28 var,  28 idcode,  14 callback
+                 incr: 28 var,  28 idcode,  14 callback
+                 accu: 28 var,  28 idcode,  14 callback
+            accu incr: 28 var,  28 idcode,  14 callback
 271 Idcode  0 - bc1:0  mda:0
-272 Elapsed time:    0:00:06    Fri May 22 09:46:11 2026
+272 Elapsed time:    0:00:07    Sun May 24 23:17:34 2026
 273 User CPU time used: 0 seconds
 274 System CPU time used: 0 seconds
 275 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  650.11M mem
+          CPU/Mem usage: 0.080 sys,  0.100 user,  650.12M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  11.44M mem
+                   accu: 0.000 sys,  0.000 user,  11.42M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 18 var,  18 idcode,  9 callback
+          Count usage: 28 var,  28 idcode,  14 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 18 var,  18 idcode,  9 callback
+                 accu: 28 var,  28 idcode,  14 callback
             accu incr: 0 var,  0 idcode,  0 callback
 276 Idcode  0 - bc1:0  mda:0
-277 Elapsed time:    0:00:06    Fri May 22 09:46:11 2026
+277 Elapsed time:    0:00:07    Sun May 24 23:17:34 2026
 278 User CPU time used: 0 seconds
 279 System CPU time used: 0 seconds
-280 End of simulation at 67000
-281 Memory usage: 650.113 M
+280 End of simulation at 166000
+281 Memory usage: 650.121 M
 282 Maximum resident set size: 133 MB
 283 Hard page faults: 71
-284 Soft page faults: 14222
-285 Elapsed time:    0:00:06    Fri May 22 09:46:11 2026
+284 Soft page faults: 14291
+285 Elapsed time:    0:00:07    Sun May 24 23:17:34 2026
 286 User CPU time used: 0 seconds
 287 System CPU time used: 0 seconds
 288 Begin FSDB profile info:
-289 FSDB Writer : bc1(26) bcn(32) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.015692) io wait(0.000000) theadpool wait(0.000000)
+289 FSDB Writer : bc1(96) bcn(39) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.015145) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 290 End FSDB profile info
-291 FSDB closed. Name: sim/tb_regs.fsdb Size: 9417
+291 FSDB closed. Name: sim/tb_controller.fsdb Size: 9809
 292 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-293                      - BlockUsed:1 Acquire:0 BufferUsed:1229
+293                      - BlockUsed:1 Acquire:0 BufferUsed:2269
 294                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:0
-295                      - MainProducerTime:0.191328084 TotalConsumerTime:0.000000000
-296                      - ElapsedTime:0.092179000
-297 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:1229
+295                      - MainProducerTime:0.192068253 TotalConsumerTime:0.000000000
+296                      - ElapsedTime:0.091460000
+297 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:2269
 298 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-299                      - BlockUsed:2 Acquire:0 BufferUsed:1229
+299                      - BlockUsed:2 Acquire:0 BufferUsed:2269
 300 SimExit
-301 Elapsed time:    0:00:06    Fri May 22 09:46:11 2026
+301 Elapsed time:    0:00:07    Sun May 24 23:17:34 2026
 302 User CPU time used: 0 seconds
 303 System CPU time used: 0 seconds
 304 Sim process exit
