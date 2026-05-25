@@ -1,9 +1,0 @@
-#!/bin/sh -h 
-PYTHONHOME=/opt/synopsys/vcs/X-2025.06-SP2/etc/search/pyh
-export PYTHONHOME
-PYTHONPATH=/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/pylib27
-export PYTHONPATH
-LD_LIBRARY_PATH=/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib:/opt/synopsys/vcs/X-2025.06-SP2/linux64/lib/pylib27
-export LD_LIBRARY_PATH
-/opt/synopsys/vcs/X-2025.06-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/opt/synopsys/projects/ufe8/sim/simv_alu.daidir/debug_dump/fsearch/./idents_alp0Nq.xml.gz" "/opt/synopsys/projects/ufe8/sim/simv_alu.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/opt/synopsys/projects/ufe8/sim/simv_alu.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/opt/synopsys/projects/ufe8/sim/simv_alu.daidir/debug_dump/fsearch/fsearch.db_tmp" "/opt/synopsys/projects/ufe8/sim/simv_alu.daidir/debug_dump/fsearch/fsearch.db"
