@@ -20,8 +20,10 @@ sim/*.log
 sim/*.fsdb
 sim/*.vpd
 sim/simv
+sim/simv_*
 sim/csrc/
 sim/simv.daidir/
+sim/*.daidir/
 
 # Editor/OS
 .vscode/
