@@ -5,11 +5,15 @@ module controller
   input  logic       rst,
   input  opcode_t    op,
   input  logic       cte_bit,
+  input  branch_t    branch_sel,
+  input  logic       carry_flag,
+  input  logic       zero_flag,
   output cpu_state_t state,
   output logic       addr_pc,
   output logic       ir_wr,
   output logic       cte_wr,
   output logic       pc_inc,
+  output logic       pc_load,
   output logic       reg_wr,
   output logic       bus_wr,
   output logic       alu_en,
@@ -36,6 +40,25 @@ module controller
     return is_alu_op(opcode) ||
            (opcode == OP_LD) ||
            (opcode == OP_MOV);
+  endfunction
+
+  function automatic logic branch_taken(
+    input opcode_t opcode,
+    input branch_t branch_kind,
+    input logic carry,
+    input logic zero
+  );
+    if (opcode != OP_BRANCH) begin
+      return 1'b0;
+    end
+
+    unique case (branch_kind)
+      BR_JC:  return carry;
+      BR_JZ:  return zero;
+      BR_JNZ: return !zero;
+      BR_JMP: return 1'b1;
+      default: return 1'b0;
+    endcase
   endfunction
 
   always_ff @(posedge clk) begin
@@ -87,6 +110,7 @@ module controller
     ir_wr   = 1'b0;
     cte_wr  = 1'b0;
     pc_inc  = 1'b0;
+    pc_load = 1'b0;
     reg_wr  = 1'b0;
     bus_wr  = 1'b0;
     alu_en  = 1'b0;
@@ -106,8 +130,9 @@ module controller
       end
 
       ST_EXEC: begin
-        alu_en = is_alu_op(op);
-        bus_wr = (op == OP_ST);
+        alu_en  = is_alu_op(op);
+        bus_wr  = (op == OP_ST);
+        pc_load = branch_taken(op, branch_sel, carry_flag, zero_flag);
       end
 
       ST_WRITE: begin

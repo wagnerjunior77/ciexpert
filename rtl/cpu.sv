@@ -18,6 +18,7 @@ module cpu
   logic  zero_q;
 
   opcode_t   op;
+  branch_t   branch_sel;
   logic      cte_bit;
   reg_addr_t rs_addr;
   reg_addr_t rd_addr;
@@ -34,11 +35,13 @@ module cpu
   logic       ir_wr;
   logic       cte_wr;
   logic       pc_inc;
+  logic       pc_load;
   logic       reg_wr;
   logic       alu_en;
   logic       use_cte;
 
   assign op       = opcode_t'(ir_q[7:5]);
+  assign branch_sel = branch_t'(ir_q[1:0]);
   assign cte_bit  = ir_q[4];
   assign rs_addr  = ir_q[3:2];
   assign rd_addr  = ir_q[1:0];
@@ -50,11 +53,15 @@ module cpu
     .rst     (rst),
     .op      (op),
     .cte_bit (cte_bit),
+    .branch_sel (branch_sel),
+    .carry_flag (carry_q),
+    .zero_flag  (zero_q),
     .state   (state),
     .addr_pc (addr_pc),
     .ir_wr   (ir_wr),
     .cte_wr  (cte_wr),
     .pc_inc  (pc_inc),
+    .pc_load (pc_load),
     .reg_wr  (reg_wr),
     .bus_wr  (bus_wr),
     .alu_en  (alu_en),
@@ -99,7 +106,9 @@ module cpu
         cte_q <= bus_in;
       end
 
-      if (pc_inc) begin
+      if (pc_load) begin
+        pc_q <= cte_q;
+      end else if (pc_inc) begin
         pc_q <= pc_q + 8'd1;
       end
 

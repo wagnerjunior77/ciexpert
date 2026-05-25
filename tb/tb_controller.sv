@@ -8,11 +8,15 @@ module tb_controller;
   logic       rst;
   opcode_t    op;
   logic       cte_bit;
+  branch_t    branch_sel;
+  logic       carry_flag;
+  logic       zero_flag;
   cpu_state_t state;
   logic       addr_pc;
   logic       ir_wr;
   logic       cte_wr;
   logic       pc_inc;
+  logic       pc_load;
   logic       reg_wr;
   logic       bus_wr;
   logic       alu_en;
@@ -23,11 +27,15 @@ module tb_controller;
     .rst     (rst),
     .op      (op),
     .cte_bit (cte_bit),
+    .branch_sel (branch_sel),
+    .carry_flag (carry_flag),
+    .zero_flag  (zero_flag),
     .state   (state),
     .addr_pc (addr_pc),
     .ir_wr   (ir_wr),
     .cte_wr  (cte_wr),
     .pc_inc  (pc_inc),
+    .pc_load (pc_load),
     .reg_wr  (reg_wr),
     .bus_wr  (bus_wr),
     .alu_en  (alu_en),
@@ -45,14 +53,14 @@ module tb_controller;
 
   task automatic check_fetch_controls(input string name);
     #1;
-    if (!addr_pc || !ir_wr || !pc_inc || cte_wr || reg_wr || bus_wr || alu_en) begin
+    if (!addr_pc || !ir_wr || !pc_inc || pc_load || cte_wr || reg_wr || bus_wr || alu_en) begin
       $error("%s: controles de FETCH incorretos", name);
     end
   endtask
 
   task automatic check_fetch_cte_controls(input string name);
     #1;
-    if (!addr_pc || !cte_wr || !pc_inc || ir_wr || reg_wr || bus_wr || alu_en) begin
+    if (!addr_pc || !cte_wr || !pc_inc || pc_load || ir_wr || reg_wr || bus_wr || alu_en) begin
       $error("%s: controles de FETCH_CTE incorretos", name);
     end
   endtask
@@ -65,6 +73,9 @@ module tb_controller;
     rst     = 1'b1;
     op      = OP_MOV;
     cte_bit = 1'b0;
+    branch_sel = BR_JMP;
+    carry_flag = 1'b0;
+    zero_flag  = 1'b0;
     tick();
     check_state("reset", ST_FETCH);
     rst = 1'b0;
@@ -73,6 +84,7 @@ module tb_controller;
   task automatic check_mov_immediate_sequence;
     op      = OP_MOV;
     cte_bit = 1'b1;
+    branch_sel = BR_JMP;
 
     check_state("MOV #i FETCH", ST_FETCH);
     check_fetch_controls("MOV #i FETCH");
@@ -86,7 +98,7 @@ module tb_controller;
     tick();
 
     check_state("MOV #i EXEC", ST_EXEC);
-    if (alu_en || bus_wr || reg_wr || !use_cte) begin
+    if (alu_en || bus_wr || pc_load || reg_wr || !use_cte) begin
       $error("MOV #i EXEC: controles incorretos");
     end
     tick();
@@ -103,6 +115,7 @@ module tb_controller;
   task automatic check_add_register_sequence;
     op      = OP_ADD;
     cte_bit = 1'b0;
+    branch_sel = BR_JMP;
 
     check_state("ADD FETCH", ST_FETCH);
     tick();
@@ -111,7 +124,7 @@ module tb_controller;
     tick();
 
     check_state("ADD EXEC", ST_EXEC);
-    if (!alu_en || bus_wr || reg_wr || use_cte) begin
+    if (!alu_en || bus_wr || pc_load || reg_wr || use_cte) begin
       $error("ADD EXEC: controles incorretos");
     end
     tick();
@@ -128,6 +141,7 @@ module tb_controller;
   task automatic check_store_sequence;
     op      = OP_ST;
     cte_bit = 1'b0;
+    branch_sel = BR_JMP;
 
     check_state("ST FETCH", ST_FETCH);
     tick();
@@ -136,7 +150,7 @@ module tb_controller;
     tick();
 
     check_state("ST EXEC", ST_EXEC);
-    if (!bus_wr || alu_en || reg_wr) begin
+    if (!bus_wr || alu_en || pc_load || reg_wr) begin
       $error("ST EXEC: controles incorretos");
     end
     tick();
@@ -147,6 +161,9 @@ module tb_controller;
   task automatic check_branch_sequence;
     op      = OP_BRANCH;
     cte_bit = 1'b0;
+    branch_sel = BR_JMP;
+    carry_flag = 1'b0;
+    zero_flag  = 1'b0;
 
     check_state("BRANCH FETCH", ST_FETCH);
     tick();
@@ -159,12 +176,37 @@ module tb_controller;
     tick();
 
     check_state("BRANCH EXEC", ST_EXEC);
-    if (alu_en || bus_wr || reg_wr) begin
+    if (alu_en || bus_wr || reg_wr || !pc_load) begin
       $error("BRANCH EXEC: controles incorretos");
     end
     tick();
 
     check_state("BRANCH volta FETCH", ST_FETCH);
+  endtask
+
+  task automatic check_conditional_branch_not_taken;
+    op          = OP_BRANCH;
+    cte_bit     = 1'b1;
+    branch_sel  = BR_JZ;
+    carry_flag  = 1'b0;
+    zero_flag   = 1'b0;
+
+    check_state("BRANCH NT FETCH", ST_FETCH);
+    tick();
+
+    check_state("BRANCH NT DECODE", ST_DECODE);
+    tick();
+
+    check_state("BRANCH NT FETCH_CTE", ST_FETCH_CTE);
+    tick();
+
+    check_state("BRANCH NT EXEC", ST_EXEC);
+    if (pc_load) begin
+      $error("BRANCH NT EXEC: pc_load nao deveria estar ativo");
+    end
+    tick();
+
+    check_state("BRANCH NT volta FETCH", ST_FETCH);
   endtask
 
   initial begin
@@ -178,6 +220,7 @@ module tb_controller;
     check_add_register_sequence();
     check_store_sequence();
     check_branch_sequence();
+    check_conditional_branch_not_taken();
 
     $display("tb_controller finalizado");
     $finish;

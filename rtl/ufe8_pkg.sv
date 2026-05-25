@@ -20,6 +20,13 @@ package ufe8_pkg;
     OP_BRANCH = 3'b111
   } opcode_t;
 
+  typedef enum logic [1:0] {
+    BR_JC  = 2'b00,
+    BR_JZ  = 2'b01,
+    BR_JNZ = 2'b10,
+    BR_JMP = 2'b11
+  } branch_t;
+
   typedef enum logic [2:0] {
     ST_FETCH,
     ST_DECODE,
